@@ -7,9 +7,11 @@
 ### Настройки, дублирующие правила Checkstyle:
 
 1. Проверяет, что поля и методы вызываются через this.
-   <br>Настройки в IDEA: 
+   <br>Настройки в IDEA:
    - `Instance field access not qualified with this`;
    - `Instance method call not qualified with this`.
+2. Подсвечивает выход за пределы максимально длины строки.
+   <br>Настройка в IDEA: `The line is longer than allowed by code style`.
 
 ### Настройки, дополняющие правила Checkstyle:
 
