@@ -1,11 +1,28 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.repositories;#end
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.repositories_ebean;#end
 
-import tech.clearcode.core.candidate_app_core.repositories.CrudRepository;
-import ${PACKAGE_NAME}.business_logic.models.${Model_name};
+import ${PACKAGE_NAME}.business_logic.entities.databases.main.${Model_name};
+import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
+import tech.clearcode.core.candidate_app_core.repositories_ebean.EbeanCrudRepository;
+import tech.clearcode.core.candidate_app_core.repositories_ebean.EbeanDatabaseSupplier;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
 import java.util.UUID;
 
 /**
- * <p>Репозиторий модели {@link ${Model_name}}.</p>
+ * <p>Репозиторий модели {@link ${Model_name}} на базе репозитория Ebean.</p>
  */
-public interface ${Model_name}Repository extends CrudRepository<${Model_name}, UUID> { }
+@Named
+@Singleton
+public final class Ebean${Model_name}Repository extends EbeanCrudRepository<${Model_name}, UUID> implements ${Model_name}Repository {
+    //region Ctor
+    
+    @Inject
+    private Ebean${Model_name}Repository(EbeanDatabaseSupplier ebeanDatabaseSupplier) {
+
+        super(ebeanDatabaseSupplier.get(), ${Model_name}.class);
+    }
+    
+    //endregion
+}

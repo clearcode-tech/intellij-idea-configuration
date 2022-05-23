@@ -1,14 +1,15 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.models;#end
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.entities.databases.main;#end
 #set( $Id_class_name = "${Model_name}Id" )
 #if(1 == 0)${Name_in_Russian_genetive_decapitalized}#end
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldNameConstants;
 import lombok.experimental.SuperBuilder;
-import tech.clearcode.core.candidate_app_core.models.UuidBaseEntity;
-import ${PACKAGE_NAME}.business_logic.models.ids.With${Id_class_name};
+import tech.clearcode.core.candidate_app_core.entities.UuidBaseEntity;
+import ${PACKAGE_NAME}.business_logic.entities.databases.main.ids.With${Id_class_name};
 
 import javax.persistence.Entity;
 import java.util.UUID;
@@ -19,6 +20,7 @@ import java.util.UUID;
 @NoArgsConstructor(access = AccessLevel.PROTECTED, force = true)
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
+@EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 @FieldNameConstants
 @SuperBuilder(toBuilder = true)
 @Entity
