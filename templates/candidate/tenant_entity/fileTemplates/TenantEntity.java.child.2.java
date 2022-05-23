@@ -1,7 +1,7 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.repositories;#end
 
 import tech.clearcode.core.candidate_app_core.multitenancy.repositories.TenantCrudRepository;
-import ${PACKAGE_NAME}.business_logic.models.${Model_name};
+import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.${Model_name};
 
 import java.util.UUID;
 
