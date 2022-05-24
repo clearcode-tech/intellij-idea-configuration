@@ -17,8 +17,8 @@ import java.util.UUID;
 /**
  * <p>${Name_in_Russian_Capitalized}.</p>
  */
-@NoArgsConstructor(access = AccessLevel.PROTECTED, force = true)
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Getter
 @EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 @FieldNameConstants
