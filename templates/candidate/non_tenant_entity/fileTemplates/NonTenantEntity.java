@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldNameConstants;
 import lombok.experimental.SuperBuilder;
-import tech.clearcode.core.candidate_app_core.entities.UuidBaseEntity;
+import tech.clearcode.core.app_core.entities.UuidBaseEntity;
 import ${PACKAGE_NAME}.business_logic.entities.databases.main.ids.With${Id_class_name};
 
 import javax.persistence.Entity;

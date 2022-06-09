@@ -2,8 +2,8 @@
 
 import ${PACKAGE_NAME}.business_logic.entities.databases.main.${Model_name};
 import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
-import tech.clearcode.core.candidate_app_core.repositories_ebean.EbeanCrudRepository;
-import tech.clearcode.core.candidate_app_core.repositories_ebean.EbeanDatabaseSupplier;
+import tech.clearcode.core.app_core.repositories_ebean.EbeanCrudRepository;
+import tech.clearcode.core.app_core.repositories_ebean.EbeanDatabaseSupplier;
 
 import javax.inject.Inject;
 import javax.inject.Named;

@@ -1,6 +1,6 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.entities.database_groups.main.ids;#end
 #set( $Id_class_name = "${Model_name}Id" )
-import tech.clearcode.core.candidate_app_core.entities.ids.BaseEntityId;
+import tech.clearcode.core.app_core.entities.ids.BaseEntityId;
 import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.${Model_name};
 
 import java.util.UUID;

@@ -3,7 +3,7 @@
 import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.${Model_name};
 import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.ids.${Model_name}Id;
 import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
-import tech.clearcode.core.candidate_app_core.multitenancy.services.entities.TenantEntityService;
+import tech.clearcode.core.app_core.multitenancy.services.entities.TenantEntityService;
 
 import javax.inject.Inject;
 import javax.inject.Named;

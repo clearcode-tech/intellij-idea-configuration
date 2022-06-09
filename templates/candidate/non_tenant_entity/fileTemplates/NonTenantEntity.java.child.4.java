@@ -3,7 +3,7 @@
 import ${PACKAGE_NAME}.business_logic.entities.databases.main.${Model_name};
 import ${PACKAGE_NAME}.business_logic.entities.databases.main.ids.${Model_name}Id;
 import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
-import tech.clearcode.core.candidate_app_core.services.entities.EntityService;
+import tech.clearcode.core.app_core.services.entities.EntityService;
 
 import javax.inject.Inject;
 import javax.inject.Named;
