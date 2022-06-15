@@ -1,4 +1,6 @@
-# Intellij IDEA Code inspections configuration #
+# Настройки Intellij IDEA #
+
+## Конфигурация Code inspections ##
 
 `inspections_config.xml` - файл для настройки инспекции кода в Intellij IDEA.
 
@@ -17,3 +19,18 @@
 
 1. Проверяет, что статичные поля и методы вызываются через имя класса.
    <br>Настройка в IDEA: `Unqualified static access`.  
+
+---
+
+## Настройки SonarLint ##
+
+Для импорта настроек:
+1. Заархивировать содержимое директории `sonarlint_settings`;
+2. В IDEA: File -> Manage IDE Settings -> Import Settings...;
+3. Выбрать файл, созданный в п.1
+
+---
+
+## Шаблоны ##
+
+В директории `templates` размещены шаблоны для IDEA, разделённые по проектам.
