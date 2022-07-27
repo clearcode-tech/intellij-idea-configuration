@@ -229,7 +229,11 @@
         </entry>
         <entry key="java:S1151">
           <value>
-            <Rule key="java:S1151" />
+            <Rule key="java:S1151">
+              <params>
+                <param key="max" value="10" />
+              </params>
+            </Rule>
           </value>
         </entry>
         <entry key="java:S1166">
@@ -562,6 +566,11 @@
             <Rule key="java:S3052" />
           </value>
         </entry>
+        <entry key="java:S3252">
+          <value>
+            <Rule key="java:S3252" />
+          </value>
+        </entry>
         <entry key="java:S3254">
           <value>
             <Rule key="java:S3254" />
@@ -789,7 +798,7 @@
       <Rule key="java:S2701" />
       <Rule key="java:S1213" />
       <Rule key="java:S1696" />
-      <Rule key="java:S4605" />
+      <Rule active="false" key="java:S4605" />
       <Rule key="java:S1695" />
       <Rule key="java:S2308" />
       <Rule key="java:S1694" />
@@ -815,6 +824,7 @@
       <Rule active="false" key="java:S107" />
       <Rule key="java:S2164" />
       <Rule key="Web:UnifiedExpressionCheck" />
+      <Rule active="false" key="java:S3252" />
       <Rule key="java:S3254" />
       <Rule key="java:S109" />
       <Rule key="Web:JspScriptletCheck" />
@@ -835,7 +845,11 @@
       <Rule key="java:S2208" />
       <Rule key="java:S1310" />
       <Rule key="java:S3937" />
-      <Rule key="java:S1151" />
+      <Rule key="java:S1151">
+        <params>
+          <param key="max" value="10" />
+        </params>
+      </Rule>
       <Rule key="Web:InputWithoutLabelCheck" />
       <Rule key="java:NoSonar" />
       <Rule key="java:S134" />
