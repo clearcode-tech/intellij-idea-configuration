@@ -1,10 +1,10 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.repositories_ebean;#end
 #set( $Id_class_name = "${Model_name}Id" )
-import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.${Model_name};
-import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.ids.$Id_class_name;
+import ${PACKAGE_NAME}.business_logic.entities.${Model_name};
+import ${PACKAGE_NAME}.business_logic.entities.ids.$Id_class_name;
 import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
-import tech.clearcode.core.app_core.multitenancy.repositories_ebean.EbeanTenantCrudRepository;
-import tech.clearcode.core.app_core.multitenancy.repositories_ebean.EbeanTenantDatabaseSupplier;
+import tech.clearcode.core.app_core.multitenancy.mode_partition.repositories_ebean.EbeanTenantCrudRepository;
+import tech.clearcode.core.app_core.repositories_ebean.EbeanDatabaseSupplier;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -16,13 +16,15 @@ import java.util.UUID;
  */
 @Named
 @Singleton
-public final class Ebean${Model_name}Repository extends EbeanTenantCrudRepository<${Model_name}, $Id_class_name, UUID> implements ${Model_name}Repository {
+public final class Ebean${Model_name}Repository
+    extends EbeanTenantCrudRepository<${Model_name}, $Id_class_name, UUID>
+    implements ${Model_name}Repository {
     //region Ctor
     
     @Inject
-    private Ebean${Model_name}Repository(EbeanTenantDatabaseSupplier ebeanTenantDatabaseSupplier) {
+    private Ebean${Model_name}Repository(EbeanDatabaseSupplier ebeanDatabaseSupplier) {
 
-        super(ebeanTenantDatabaseSupplier, ${Model_name}.class);
+        super(ebeanDatabaseSupplier.get(), ${Model_name}.class);
     }
     
     //endregion

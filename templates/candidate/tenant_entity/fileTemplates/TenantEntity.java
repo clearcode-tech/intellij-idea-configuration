@@ -1,4 +1,4 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.entities.database_groups.main;#end
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.entities;#end
 #set( $Id_class_name = "${Model_name}Id" )
 #if(1 == 0)${Name_in_Russian_genetive_decapitalized}#end
 import lombok.AccessLevel;
@@ -8,8 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldNameConstants;
 import lombok.experimental.SuperBuilder;
-import tech.clearcode.core.app_core.entities.UuidBaseEntity;
-import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.ids.With${Id_class_name};
+import tech.clearcode.core.app_core.multitenancy.mode_partition.entities.UuidBaseTenantEntity;
+import ${PACKAGE_NAME}.business_logic.entities.ids.With${Id_class_name};
 
 import javax.persistence.Entity;
 import java.util.UUID;
@@ -24,7 +24,7 @@ import java.util.UUID;
 @FieldNameConstants
 @SuperBuilder(toBuilder = true)
 @Entity
-public final class ${Model_name} extends UuidBaseEntity implements With${Id_class_name} {
+public final class ${Model_name} extends UuidBaseTenantEntity implements With${Id_class_name} {
     //region Fields
     
     

@@ -1,9 +1,11 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}.business_logic.services.entities;#end
 #set( $Id_class_name = "${Model_name}Id" )
-import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.${Model_name};
-import ${PACKAGE_NAME}.business_logic.entities.database_groups.main.ids.$Id_class_name;
+import ${PACKAGE_NAME}.business_logic.entities.${Model_name};
+import ${PACKAGE_NAME}.business_logic.entities.ids.$Id_class_name;
 import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
-import tech.clearcode.core.app_core.multitenancy.services.entities.TenantEntityService;
+import tech.clearcode.core.app_core.multitenancy.mode_partition.services.entities.TenantEntityService;
+import tech.clearcode.core.app_core.multitenancy.services.TenantReferenceService;
+import tech.clearcode.core.app_core.repositories.TransactionProvider;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -15,13 +17,17 @@ import java.util.UUID;
  */
 @Named
 @Singleton
-public final class ${Model_name}Service extends TenantEntityService<${Model_name}, $Id_class_name, ${Model_name}Repository, UUID> {
+public final class ${Model_name}Service
+    extends TenantEntityService<${Model_name}, $Id_class_name, ${Model_name}Repository, UUID> {
     //region Ctor
 
     @Inject
-    public ${Model_name}Service(${Model_name}Repository repository) {
-
-        super(repository, ${Model_name}.class);
+    public ${Model_name}Service(
+        ${Model_name}Repository repository,
+        TransactionProvider transactionProvider,
+        TenantReferenceService tenantReferenceService
+    ) {
+        super(repository, transactionProvider, tenantReferenceService, ${Model_name}.class);
     }
 
     //endregion
