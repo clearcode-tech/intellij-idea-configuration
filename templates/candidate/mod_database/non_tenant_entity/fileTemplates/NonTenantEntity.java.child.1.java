@@ -6,7 +6,7 @@ import ${PACKAGE_NAME}.business_logic.entities.databases.main.${Model_name};
 import java.util.UUID;
 
 /**
- * <p>Типизированный ID модели {@link ${Model_name}}.</p>
+ * Типизированный ID модели {@link ${Model_name}}.
  */
 public final class ${Id_class_name} extends BaseEntityId<${Model_name}, UUID> implements With${Id_class_name} {
     //region Ctor

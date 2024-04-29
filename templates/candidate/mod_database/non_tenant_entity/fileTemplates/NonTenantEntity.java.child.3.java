@@ -7,6 +7,6 @@ import ${PACKAGE_NAME}.business_logic.entities.databases.main.ids.${Id_class_nam
 import java.util.UUID;
 
 /**
- * <p>Репозиторий модели {@link ${Model_name}}.</p>
+ * Репозиторий модели {@link ${Model_name}}.
  */
 public interface ${Model_name}Repository extends CrudRepository<${Model_name}, ${Id_class_name}, UUID> { }

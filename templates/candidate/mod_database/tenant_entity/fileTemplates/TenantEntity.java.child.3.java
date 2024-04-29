@@ -11,7 +11,7 @@ import javax.inject.Singleton;
 import java.util.UUID;
 
 /**
- * <p>Сервис модели {@link ${Model_name}}.</p>
+ * Сервис модели {@link ${Model_name}}.
  */
 @Named
 @Singleton

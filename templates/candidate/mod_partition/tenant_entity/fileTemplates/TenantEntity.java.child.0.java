@@ -5,13 +5,13 @@ import ${PACKAGE_NAME}.business_logic.entities.${Model_name};
 import java.util.UUID;
 
 /**
- * <p>Интерфейс модели, которая содержит ID модели {@link ${Model_name}}.</p>
+ * Интерфейс модели, которая содержит ID модели {@link ${Model_name}}.
  */
 public interface With${Id_class_name} {
     //region Public
 
     /**
-     * <p>Возвращает ID ${Name_in_Russian_genetive_decapitalized}.</p>
+     * Возвращает ID ${Name_in_Russian_genetive_decapitalized}.
      *
      * @return ID ${Name_in_Russian_genetive_decapitalized}.
      */

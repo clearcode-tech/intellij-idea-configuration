@@ -12,7 +12,7 @@ import javax.inject.Singleton;
 import java.util.UUID;
 
 /**
- * <p>Репозиторий модели {@link ${Model_name}} на базе репозитория Ebean.</p>
+ * Репозиторий модели {@link ${Model_name}} на базе репозитория Ebean.
  */
 @Named
 @Singleton

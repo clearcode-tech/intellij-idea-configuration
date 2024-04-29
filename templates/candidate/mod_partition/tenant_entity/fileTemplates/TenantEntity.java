@@ -15,7 +15,7 @@ import javax.persistence.Entity;
 import java.util.UUID;
 
 /**
- * <p>${Name_in_Russian_Capitalized}.</p>
+ * ${Name_in_Russian_Capitalized}.
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
