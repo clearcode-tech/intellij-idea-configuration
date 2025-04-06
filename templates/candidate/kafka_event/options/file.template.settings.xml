@@ -1,0 +1,16 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="TenantEvent.java" file-name="./business_logic/pubsub/events/${Event_Name_Without_Event_On_End}Event" reformat="true" live-template-enabled="false">
+        <template name="TenantEvent.java.child.0.java" file-name="./business_logic/pubsub/topics/${Event_Name_Without_Event_On_End}Topic" reformat="true" live-template-enabled="false" />
+        <template name="TenantEvent.java.child.1.java" file-name="./pubsub_kafka/publishers/Kafka${Event_Name_Without_Event_On_End}EventPublisher" reformat="true" live-template-enabled="false" />
+        <template name="TenantEvent.java.child.2.java" file-name="./pubsub_kafka/subscribers/Kafka${Handler_Name}On${Event_Name_Without_Event_On_End}EventSubscriber" reformat="true" live-template-enabled="false" />
+        <template name="TenantEvent.java.child.3.java" file-name="./business_logic/pubsub/handlers/${Handler_Name}On${Event_Name_Without_Event_On_End}EventHandler" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="TenantEvent.java.child.0.java" file-name="./business_logic/pubsub/topics/${Event_Name_Without_Event_On_End}Topic" reformat="true" live-template-enabled="false" />
+      <template name="TenantEvent.java.child.1.java" file-name="./pubsub_kafka/publishers/Kafka${Event_Name_Without_Event_On_End}EventPublisher" reformat="true" live-template-enabled="false" />
+      <template name="TenantEvent.java.child.2.java" file-name="./pubsub_kafka/subscribers/Kafka${Handler_Name}On${Event_Name_Without_Event_On_End}EventSubscriber" reformat="true" live-template-enabled="false" />
+      <template name="TenantEvent.java.child.3.java" file-name="./business_logic/pubsub/handlers/${Handler_Name}On${Event_Name_Without_Event_On_End}EventHandler" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>
