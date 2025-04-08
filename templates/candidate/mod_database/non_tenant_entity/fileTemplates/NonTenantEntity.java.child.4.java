@@ -5,9 +5,9 @@ import ${PACKAGE_NAME}.business_logic.entities.databases.main.ids.${Model_name}I
 import ${PACKAGE_NAME}.business_logic.repositories.${Model_name}Repository;
 import tech.clearcode.core.app_core.services.entities.EntityService;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.inject.Singleton;
 import java.util.UUID;
 
 /**

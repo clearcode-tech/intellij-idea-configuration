@@ -11,7 +11,7 @@ import lombok.experimental.SuperBuilder;
 import tech.clearcode.core.app_core.entities.UuidBaseEntity;
 import ${PACKAGE_NAME}.business_logic.entities.databases.main.ids.With${Id_class_name};
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 import java.util.UUID;
 
 /**

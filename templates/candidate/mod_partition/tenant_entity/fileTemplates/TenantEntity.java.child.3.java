@@ -7,9 +7,9 @@ import tech.clearcode.core.app_core.multitenancy.mode_partition.services.entitie
 import tech.clearcode.core.app_core.multitenancy.services.TenantReferenceService;
 import tech.clearcode.core.app_core.repositories.TransactionProvider;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
+import jakarta.inject.Singleton;
 import java.util.UUID;
 
 /**
