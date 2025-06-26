@@ -35,4 +35,4 @@
 
 В директории `templates` размещены шаблоны для IDEA, разделённые по проектам.
 Для шаблонов миграций нужно вручную прописать шаблон имени файла: 
-V${YEAR}.${MONTH}.${DAY}.${HOUR}.${MINUTE}__${TASK_KEY}_${MIGRAYION_DESCRIPTION}
+V${YEAR}.${MONTH}.${DAY}.${HOUR}.${MINUTE}__${TASK_KEY}_${MIGRATION_DESCRIPTION}
